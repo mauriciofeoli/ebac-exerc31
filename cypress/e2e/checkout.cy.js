@@ -12,5 +12,6 @@ describe('Fluxo de checkout', () => {
     cy.contains('button, a', 'Checkout', { matchCase: false }).click({ force: true })
     cy.url().should('include', '/checkout')
     cy.get('body').should('not.contain', 'Seu carrinho está vazio')
+    cy.screenshot('checkout-aprovado')
   })
 })

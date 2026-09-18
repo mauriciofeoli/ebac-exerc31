@@ -10,5 +10,6 @@ describe('Cadastro de conta', () => {
     registration.fillPassword(password)
     registration.submit()
     registration.assertSuccess()
+    cy.screenshot('cadastro-de-conta-aprovado')
   })
 })
