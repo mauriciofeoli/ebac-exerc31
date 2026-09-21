@@ -28,7 +28,7 @@ module.exports = defineConfig({
     baseUrl: 'http://lojaebac.ebaconline.art.br',
     specPattern: 'cypress/e2e/**/*.cy.js',
     supportFile: 'cypress/support/e2e.js',
-    video: false,
+    video: true,
     chromeWebSecurity: false,
     setupNodeEvents(on, config) {
       registerReportPortalPlugin(on, config)
