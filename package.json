@@ -8,7 +8,6 @@
     "cypress:run:junit": "npx cypress run --reporter junit --reporter-options \"mochaFile=cypress/reports/junit/results-[hash].xml,toConsole=true\"",
     "cypress:record": "npx cypress run --record",
     "cypress:cloud": "npx cypress run --record",
-    "generate:report": "node scripts/generate-cypress-report.js",
     "test": "npm run cypress:run"
   },
   "devDependencies": {
